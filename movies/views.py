@@ -1,3 +1,15 @@
-from django.shortcuts import render   # noqa: F401
+from django.views import generic
 
-# Create your views here.
+from .models import Movie
+
+
+class MoviesList(generic.ListView):
+    """List of movies"""
+    model = Movie
+    queryset = Movie.objects.filter(draft=False)
+
+
+class MovieDetailView(generic.DetailView):
+
+    model = Movie
+    slug_field = "url"
