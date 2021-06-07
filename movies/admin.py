@@ -1,7 +1,6 @@
-from django.contrib import admin   # noqa: F401
+from django.contrib import admin  # noqa: F401
 
-from .models import Category, Genre, Movie, MovieShots, Actor, Rating, RatingStar, Reviews
-
+from .models import Actor, Category, Genre, Movie, MovieShots, Rating, RatingStar, Reviews
 
 admin.site.register(Category)
 admin.site.register(Genre)
