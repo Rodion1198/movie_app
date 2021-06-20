@@ -64,7 +64,7 @@ class Movie(models.Model):
         'Fees in USA', default=0, help_text='indicate the amount in dollars'
     )
     fees_in_world = models.PositiveIntegerField(
-        'Fess in world', default=0, help_text='indicate the amount in dollars'
+        'Fees in world', default=0, help_text='indicate the amount in dollars'
     )
     category = models.ForeignKey(Category, verbose_name='Category', on_delete=models.SET_NULL, null=True)
     url = models.SlugField(max_length=150, unique=True)
