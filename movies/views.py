@@ -50,3 +50,6 @@ class Search(generic.ListView):
         context = super().get_context_data(*args, **kwargs)
         context['q'] = self.request.GET.get('q')
         return context
+
+class Test:
+    pass
