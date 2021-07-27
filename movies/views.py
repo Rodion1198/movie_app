@@ -40,7 +40,6 @@ class FilterMovieView(GenreYear, generic.ListView):
 
 
 class Search(generic.ListView):
-
     paginate_by = 3
 
     def get_queryset(self):
